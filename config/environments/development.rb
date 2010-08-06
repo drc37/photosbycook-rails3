@@ -19,4 +19,7 @@ Photosbycook::Application.configure do
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
+  
+  
+  APP_BASE_URL = "http://localhost:3000"
 end

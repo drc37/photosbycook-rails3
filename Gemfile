@@ -5,6 +5,8 @@ gem 'rails', '3.0.0.rc'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+source :gemcutter
+
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Use unicorn as the web server
@@ -18,7 +20,16 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Bundle the extra gems:
 # gem 'bj'
-# gem 'nokogiri', '1.4.1'
+gem 'nokogiri', '1.4.1'
+
+gem 'compass'
+gem 'haml'
+# gem "rack", '1.0.1'
+
+
+gem "mysql"
+
+
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
