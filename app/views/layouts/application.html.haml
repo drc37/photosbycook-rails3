@@ -1,14 +1,15 @@
 !!!
 %html
   %head
-    = yield :header
-    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"    
-    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"    
-    = javascript_include_tag "jquery.ae.image.resize"
-    = javascript_include_tag "application"
-    = javascript_include_tag 'photosbycook'
-  
-    %link{ :href => "/images/favicon.ico", :rel => "shortcut icon" }
+    = # yield :header
+    = # javascript_include_tag "application"
+    %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    %script{ :type => "text/javascript", :src =>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"}
+    %script{ :type => "text/javascript", :src =>"/javascripts/jquery.ae.image.resize.js"}
+    %script{ :type => "text/javascript", :src =>"/javascripts/application.js"}
+    %script{ :type => "text/javascript", :src =>'/javascripts/photosbycook.js'}
+    
+    = # %link{ :href => "/images/favicon.ico", :rel => "shortcut icon" }
     = stylesheet_link_tag "jquery-ui-1.7.2.css", 'compiled/layout.css'
     / %title= "#{organization_name}"
     / = render :partial => "layouts/google_analytics"
