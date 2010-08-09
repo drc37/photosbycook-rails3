@@ -23,6 +23,7 @@ gem 'nokogiri', '1.4.1'
 gem 'compass'
 gem 'actionpack'
 gem 'haml', '3.0.13' 
+gem 'pg'
 # gem "rack", '1.0.1'
 
 
