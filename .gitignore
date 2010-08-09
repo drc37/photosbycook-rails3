@@ -1,4 +1,8 @@
+public/stylesheets/compiled/*
+
+
 .bundle
 db/*.sqlite3
 log/*.log
 tmp/**/*
+
