@@ -12,5 +12,5 @@ test:
   database: photos_test<%= ENV['TEST_ENV_NUMBER'] %>
 
 production:
-  <<: *defaults
+  adapter: mysql
   database: photos_production
